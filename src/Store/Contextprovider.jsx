@@ -16,7 +16,7 @@ const Contextprovider = ({children}) => {
     const [humidity, setHumidity] = useState();
     const [windspeed, setWindSpeed] = useState();
 
-    const [error , seterror] = useState(false)
+    const [error , seterror] = useState(true)
   
 
   return (

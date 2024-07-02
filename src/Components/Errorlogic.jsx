@@ -8,10 +8,11 @@ const Errorlogic = () => {
 
     const {error} = useContext(InputContext)
 
+
   return (
     <>
         {
-            error ? <NothingToshow/> : <Result/>
+            error ? <NothingToshow /> : <Result/>
         }
     </>
   )

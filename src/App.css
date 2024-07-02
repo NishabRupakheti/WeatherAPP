@@ -1,11 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 
 .app-component{
+  background-color: #cbffee;
+  border-radius: 20px;
+  padding: 1.4rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   border: 2px solid black;
   width: 60%;
-  margin-top: 3rem;
+  margin-top: 5rem;
+}
+
+
+.fieldContainer{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 80%;
+  margin: auto ;
+  font-size: large;
+}
+
+.resultContainer{
+  font-size: large;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 80%;
+  margin: auto;
 }

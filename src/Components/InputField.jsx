@@ -1,16 +1,12 @@
-import React , {useState} from "react";
+import React , {useState , useContext} from "react";
 import { CiStar } from "react-icons/ci";
 import styles from './InputField.module.css'
 import Button from "./Button";
+import { InputContext } from "../Store/Contextprovider";
 
 const InputField = () => {
 
-    const [input , setInput] = useState('')
-
-    const handleInput = (e)=>{
-        setInput(e.target.value)
-    }
-
+  const {input,handleInput } = useContext(InputContext)
 
   return (
     <>
@@ -27,7 +23,7 @@ const InputField = () => {
         aria-label="Username"
         aria-describedby="addon-wrapping"
       />
-      <Button />
+      <Button  />
     </span>
       </>
   );

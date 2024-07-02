@@ -4,7 +4,7 @@ import { TiWeatherSunny } from "react-icons/ti";
 
 const NothingToshow = () => {
   return (
-    <div className="container-fluid mt-3 text-center ">
+    <div className="container mt-3 mb-3 ">
       {" "}
       <span>
         <TiWeatherSunny />

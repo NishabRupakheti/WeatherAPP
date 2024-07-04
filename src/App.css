@@ -16,6 +16,13 @@
 }
 
 
+@media (max-width: 768px) {
+  .app-component {
+    width: 95%;
+  }
+}
+
+
 .fieldContainer{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 80%;
@@ -32,3 +39,4 @@
   margin: 12px auto;
   text-align: center;
 }
+

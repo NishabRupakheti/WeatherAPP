@@ -3,8 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./Components/Header";
 import InputField from "./Components/InputField";
-import Result from "./Components/Result";
-import NothingToshow from "./Components/NothingToshow";
 import Contextprovider from "./Store/Contextprovider";
 import Errorlogic from "./Components/Errorlogic";
 

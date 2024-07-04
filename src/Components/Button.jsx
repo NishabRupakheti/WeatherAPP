@@ -21,9 +21,9 @@ const Button = () => {
       method: "GET",
       url: `https://open-weather13.p.rapidapi.com/city/${input}/EN`,
       headers: {
-        "x-rapidapi-key": "73918fb350mshaf79356cbee72b9p11ee84jsn42d2f144a22d",
-        "x-rapidapi-host": "open-weather13.p.rapidapi.com",
-      },
+        'x-rapidapi-key': '73918fb350mshaf79356cbee72b9p11ee84jsn42d2f144a22d',
+        'x-rapidapi-host': 'open-weather13.p.rapidapi.com'
+      }
     };
 
     try {

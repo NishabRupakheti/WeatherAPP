@@ -1,4 +1,4 @@
-import React , {createContext , useState} from 'react'
+import React , {createContext , useEffect, useState} from 'react'
 
 export const InputContext = createContext()
 
@@ -17,6 +17,13 @@ const Contextprovider = ({children}) => {
     const [windspeed, setWindSpeed] = useState();
 
     const [error , seterror] = useState(true)
+
+    useEffect(()=>{
+      
+    if (input == ""){
+      seterror(true)
+    }
+    },[input])
   
 
   return (

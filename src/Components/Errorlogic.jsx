@@ -8,7 +8,6 @@ const Errorlogic = () => {
 
     const {error} = useContext(InputContext)
 
-
   return (
     <>
         {

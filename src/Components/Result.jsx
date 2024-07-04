@@ -9,12 +9,12 @@ const Result = () => {
   return (
     <>
         <div className="container text-center" > {weatherstate} </div>
-      <div class="card m-3 " style={{width:"90%"}}>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center ">Temperature : {temp}  </li>
-          <li class="list-group-item text-center ">Feels like : {feelsLike}  </li>
-          <li class="list-group-item text-center ">Humidity : {humidity} </li>
-          <li class="list-group-item text-center ">Wind speed : {windspeed} </li>
+      <div className="card m-3 " style={{width:"90%"}}>
+        <ul className="list-group list-group-flush">
+          <li className="list-group-item text-center ">Temperature : {temp}° F </li>
+          <li className="list-group-item text-center ">Feels like : {feelsLike}° F  </li>
+          <li className="list-group-item text-center ">Humidity : {humidity}  </li>
+          <li className="list-group-item text-center ">Wind speed : {windspeed} Km/hr </li>
         </ul>
       </div>
     </>

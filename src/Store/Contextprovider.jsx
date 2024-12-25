@@ -15,15 +15,7 @@ const Contextprovider = ({children}) => {
     const [feelsLike, setFeelsLike] = useState();
     const [humidity, setHumidity] = useState();
     const [windspeed, setWindSpeed] = useState();
-
     const [error , seterror] = useState(true)
-
-    useEffect(()=>{
-      
-    if (input == ""){
-      seterror(true)
-    }
-    },[input])
   
 
   return (

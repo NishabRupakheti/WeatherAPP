@@ -6,7 +6,8 @@ import { InputContext } from '../Store/Contextprovider'
 
 const Errorlogic = () => {
 
-    const {error} = useContext(InputContext)
+    const {error , input} = useContext(InputContext)
+
 
   return (
     <>

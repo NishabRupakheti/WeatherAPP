@@ -6,13 +6,13 @@ import { CiSearch } from "react-icons/ci";
 const Button = () => {
   const {
     input,
-    error,
     setTemp,
     setWeatherstate,
     setFeelsLike,
     setHumidity,
     setWindSpeed,
     seterror,
+     setName
   } = useContext(InputContext);
 
   const fetchData = async () => {
@@ -40,7 +40,7 @@ const Button = () => {
       setHumidity(weatherData.main.humidity);
       setWindSpeed(weatherData.wind.speed);
       setWeatherstate(weatherData.weather[0].description)
-
+      setName(weatherData.name)
 
     } catch (error) {
       console.error("Error fetching data:", error);

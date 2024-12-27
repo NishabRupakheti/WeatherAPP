@@ -4,23 +4,16 @@
 
 
 .app-component{
-  background-color: #cbffee;
+  background-color: #ffffff;
   border-radius: 20px;
   padding: 1.4rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   border: 2px solid black;
   width: 60%;
   margin-top: 5rem;
 }
 
-
-@media (max-width: 768px) {
-  .app-component {
-    width: 95%;
-  }
-}
 
 
 .fieldContainer{
@@ -40,3 +33,15 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .app-component {
+    width: 95%;
+  }
+  .fieldContainer{
+    width: 100%;
+  }
+
+  .app-component{
+    font-size: small;
+  }
+}

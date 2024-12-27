@@ -3,22 +3,23 @@ import React from "react";
 import { InputContext } from "../Store/Contextprovider";
 
 const Result = () => {
-  const { temp, weatherstate, feelsLike, humidity, windspeed } =
+  const { temp, weatherstate, feelsLike, humidity, windspeed , input , name, setName } =
     useContext(InputContext);
 
   return (
     <>
-      <div className="container text-center"> {weatherstate} </div>
+    <h2>Weather report in : {name} </h2>
+      <div className="container text-center"> Condition : {weatherstate} </div>
       <div className="card m-3 " style={{ width: "90%" }}>
         <ul className="list-group list-group-flush">
           <li className="list-group-item text-center ">
-            Temperature : {temp}° F{" "}
+            Temperature : {temp}° C{" "}
           </li>
           <li className="list-group-item text-center ">
-            Feels like : {feelsLike}° F{" "}
+            Feels like : {feelsLike}° C{" "}
           </li>
           <li className="list-group-item text-center ">
-            Humidity : {humidity}{" "}
+            Humidity : {humidity}{" %"}
           </li>
           <li className="list-group-item text-center ">
             Wind speed : {windspeed} Km/hr{" "}

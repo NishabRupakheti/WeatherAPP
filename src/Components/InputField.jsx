@@ -8,25 +8,25 @@ const InputField = () => {
   const { input, handleInput } = useContext(InputContext);
 
   return (
-    <>
-      <span className=" input-group flex-nowrap m-3 " style={{ width: "90%" }}>
+    <div className="d-flex justify-content-center align-items-center my-4">
+      <div className="input-group w-75">
         <span
-          className={`input-group-text" id="addon-wrapping cool ${styles.cool}`}
+          className={`input-group-text ${styles.iconContainer} bg-primary text-white`}
+          id="addon-wrapping"
         >
           <CiStar />
         </span>
         <input
           value={input}
-          style={{borderRadius:"22px"}}
           onChange={handleInput}
           type="text"
-          className={`form-control ${styles.inputfield}`}
+          className={`form-control ${styles['inputfield']}`}
           placeholder="Enter a city"
           aria-describedby="addon-wrapping"
         />
         <Button />
-      </span>
-    </>
+      </div>
+    </div>
   );
 };
 

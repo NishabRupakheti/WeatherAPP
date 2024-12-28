@@ -49,7 +49,7 @@ const Button = () => {
 
   return (
     <button
-      className="btn btn-outline-dark m-1 btn-outline-info rounded-4 "
+      className="btn btn-outline-secondary btn-sm"
       style={{ padding: "15px" }}
       onClick={fetchData}
     >

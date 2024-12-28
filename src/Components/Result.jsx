@@ -3,30 +3,32 @@ import React from "react";
 import { InputContext } from "../Store/Contextprovider";
 
 const Result = () => {
-  const { temp, weatherstate, feelsLike, humidity, windspeed , input , name, setName } =
-    useContext(InputContext);
+  const { temp, weatherstate, feelsLike, humidity, windspeed, name } = useContext(InputContext);
 
   return (
-    <>
-    <h2>Weather report in : {name} </h2>
-      <div className="container text-center"> Condition : {weatherstate} </div>
-      <div className="card m-3 " style={{ width: "90%" }}>
+    <div className="container">
+      <h2 className="text-center text-primary mb-4">Weather Report for: <span className="text-capitalize">{name}</span></h2>
+      
+      <div className="card shadow-lg rounded-lg">
+        <div className="card-header bg-info text-white text-center fs-4">
+          Current Weather Condition: <strong>{weatherstate}</strong>
+        </div>
         <ul className="list-group list-group-flush">
-          <li className="list-group-item text-center ">
-            Temperature : {temp}° C{" "}
+          <li className="list-group-item d-flex justify-content-between align-items-center">
+            <strong>Temperature:</strong> <span className="fs-5">{temp}°C</span>
           </li>
-          <li className="list-group-item text-center ">
-            Feels like : {feelsLike}° C{" "}
+          <li className="list-group-item d-flex justify-content-between align-items-center">
+            <strong>Feels Like:</strong> <span className="fs-5">{feelsLike}°C</span>
           </li>
-          <li className="list-group-item text-center ">
-            Humidity : {humidity}{" %"}
+          <li className="list-group-item d-flex justify-content-between align-items-center">
+            <strong>Humidity:</strong> <span className="fs-5">{humidity}%</span>
           </li>
-          <li className="list-group-item text-center ">
-            Wind speed : {windspeed} Km/hr{" "}
+          <li className="list-group-item d-flex justify-content-between align-items-center">
+            <strong>Wind Speed:</strong> <span className="fs-5">{windspeed} km/h</span>
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
